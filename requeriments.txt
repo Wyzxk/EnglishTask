@@ -1,0 +1,3 @@
+react-image-gallery
+tailwindcss postcss autoprefixer
+flowbite-react
