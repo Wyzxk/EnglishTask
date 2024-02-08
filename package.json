@@ -2,7 +2,6 @@
   "name": "bigproject",
   "private": true,
   "version": "0.0.0",
-  "homepage": "http://wyzxk.github.io/BigProject-Cultures",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
