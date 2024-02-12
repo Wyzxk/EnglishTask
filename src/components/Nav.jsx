@@ -17,7 +17,7 @@ function Navbar() {
         <div>
           <ul className="flex space-x-4">
             <li>
-              <Link to="/turism" className="text-black hover:text-gray-300">
+              <Link to="/app" className="text-black hover:text-gray-300">
                 Next &gt;
               </Link>
             </li>
