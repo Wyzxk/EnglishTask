@@ -9,8 +9,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route exact path="/" Component={App} />
-        <Route exact path="/turism" Component={Turism} />
+        <Route exact path="/app" Component={App} />
+        <Route exact path="/" Component={Turism} />
       </Routes>
     </Router>
   </React.StrictMode>
