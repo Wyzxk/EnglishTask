@@ -1,6 +1,7 @@
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import Navbar from "./components/Nav";
+
 function App() {
   const images = [
     {
@@ -16,211 +17,202 @@ function App() {
       thumbnail: "https://picsum.photos/id/1018/250/150/",
     },
   ];
+
   return (
     <>
       <Navbar />
-      <br />
-      <br /> <br />
-      <br />
-      <div className="w-11/12 mx-auto flex ">
-        <div className="flex-1">
-          <h1 className="text-4xl pt-16 flex items-start justify-start">
-            Geographic Location
-          </h1>
-          <p className="pt-6 mr-20">
-            The Andoque culture locate in the Araracuara region and caño aduche,
-            they was living here during many years and they was very close of
-            the Ribera of the middle river caquetá, just in the south of the
-            colombian amazone. They are one of the cultures with smallest number
-            of habitants, but with a lot capacity to conserv their ancestral
-            traditions.
-          </p>
+      <div className="container mx-auto px-4">
+        <div className="lg:flex mt-24">
+          <div className="lg:w-1/2 lg:pr-8">
+            <h1 className="text-4xl pt-16">Geographic Location</h1>
+            <p className="pt-6 pr-14">
+              The Andoque culture is located in the Araracuara region and caño
+              aduche. They have been living here for many years and are very
+              close to the Ribera of the middle river caquetá, just in the south
+              of the Colombian Amazon. They are one of the cultures with the
+              smallest number of inhabitants but with a lot of capacity to
+              conserve their ancestral traditions.
+            </p>
+          </div>
+          <div className="lg:w-1/2 mt-8 lg:mt-0">
+            <ImageGallery
+              items={images}
+              showPlayButton={false}
+              showFullscreenButton={false}
+              showNav={false}
+              showBullets={true}
+              autoPlay={true}
+              slideInterval={3000}
+              showThumbnails={false}
+              slideDuration={1000}
+              additionalClass="custom-image-gallery"
+            />
+          </div>
         </div>
-        <div className="flex-1">
-          <ImageGallery
-            items={images}
-            showPlayButton={false}
-            showFullscreenButton={false}
-            showNav={false}
-            showBullets={true}
-            autoPlay={true}
-            slideInterval={3000}
-            showThumbnails={false}
-            slideDuration={1000}
-            additionalClass="custom-image-gallery" // Clase adicional para el componente ImageGallery
-          />
+        <div className="mt-20 lg:flex lg:items-center lg:justify-center">
+          <div className="lg:w-11/12 lg:max-w-screen-lg lg:flex lg:items-center lg:justify-center">
+            <div className="lg:w-full lg:pr-8 text-center">
+              <h1 className="text-4xl">Population</h1>
+              <p className="pt-6 pl-6 pr-6">
+                The population of the Andoques was harmed by the exploitation of
+                rubber that was very common in those areas, this occurred
+                thousands of years ago and due to the great pollution and
+                problems that it, the population was decreasing rapidly and now
+                there are only 597 records left.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      <br />
-      <div className="mx-auto mt-32 mb-4 text-center">
-        <h1 className="text-4xl mb-6">Population</h1>
-        <p className="mx-12 mb-6">
-          The population of the Andoques was harmed by the exploitation of
-          rubber that was very common in those areas, this occurred thousands of
-          years ago and due to the great pollution and problems that it, the
-          population was decreasing rapidly and now there are only 597 records
-          left.
-        </p>
-      </div>
-      <div className="flex items-center justify-center mb-40">
-        <img
-          src="Andoque-population.jpeg"
-          style={{ width: "1240px", height: "300px" }}
-        />
-      </div>
-      <div className="flex mt-40 mx-4">
-        <div className="w-full lg:w-2/3 ml-16">
-          <h1 className="text-4xl flex items-start justify-start">
-            Typical food:
-          </h1>
-          <p className="pt-6 mr-20">
-            Their diet consists in eat fish, hunt animals like deer and birds,
-            and collect fruits and vegetables from the Amazon. They also
-            prepared dishes with the crops and raw materials of their
-            agriculture. In addition, they also exchange their meals with others
-            communities
-          </p>
+        <div className="mt-8 lg:flex lg:items-center lg:justify-center">
+          <div className="lg:w-11/12 lg:max-w-screen-lg">
+            <img
+              src="Andoque-population.jpeg"
+              className="w-full h-80"
+              alt="Population"
+            />
+          </div>
         </div>
-        <div className="w-1/5 overflow-hidden transition-transform duration-500 transform hover:scale-110 animate-slide1">
-          <img src="cazar.jpg" alt="Imagen 1" className="w-full h-auto" />
+
+        <div className="mt-28  lg:flex">
+          <div className="lg:w-1/2 lg:pr-8 pt-20">
+            <h1 className="text-4xl">Typical Food:</h1>
+            <p className="pt-6 pr-14">
+              Their diet consists of eating fish, hunting animals like deer and
+              birds, and collecting fruits and vegetables from the Amazon. They
+              also prepared dishes with the crops and raw materials of their
+              agriculture. In addition, they also exchange their meals with
+              other communities.
+            </p>
+          </div>
+          <div className="lg:w-1/2 mt-8 lg:mt-0">
+            <div className="grid grid-cols-2 gap-4">
+              <img src="cazar.jpg" alt="Cazar" className="w-full h-auto" />
+              <img
+                src="vegetables.jpg"
+                alt="Vegetables"
+                className="w-full h-auto"
+              />
+              <img src="pescao.jpg" alt="Pescao" className="w-full h-auto" />
+              <img src="vege.jpg" alt="Vege" className="w-full h-auto" />
+            </div>
+          </div>
         </div>
-        <div className="w-1/5 overflow-hidden transition-transform duration-500 transform hover:scale-110 animate-slide2">
-          <img src="vegetables.jpg" alt="Imagen 2" className="w-full h-auto" />
+        <div className="mt-20 lg:flex">
+          <div className="lg:w-1/2 lg:pr-8">
+            <ImageGallery
+              items={images}
+              showPlayButton={false}
+              showFullscreenButton={false}
+              showNav={false}
+              showBullets={true}
+              autoPlay={true}
+              slideInterval={3000}
+              showThumbnails={false}
+              slideDuration={1000}
+              additionalClass="custom-image-gallery"
+            />
+          </div>
+          <div className="lg:w-1/2 mt-8 lg:mt-0 pt-16">
+            <h1 className="text-4xl pl-14">Languages</h1>
+            <p className="pt-6 pl-14">
+              The Andoque is an indigenous American language spoken by a small
+              group in the area of the river Caqueta. In Colombia, they are
+              currently facing challenges due to a decline in population. In
+              2000, there were 610 Andoque speakers in the area of the river
+              Anduche and downstream of Araracuara, and only 50 of them spoke
+              Andoque exclusively, while the rest spoke Andoque and Spanish. It
+              is interesting to note that Andoque extended into Peru.
+            </p>
+          </div>
         </div>
-        <div className="w-1/5 overflow-hidden transition-transform duration-500 transform hover:scale-110 animate-slide3">
-          <img src="pescao.jpg" alt="Imagen 3" className="w-full h-auto" />
+        <div className="mt-24 lg:flex">
+          <div className="lg:w-1/2 lg:pr-8 pt-9">
+            <h1 className="text-4xl">Economy and Housing:</h1>
+            <p className="pt-6 pr-20">
+              The Andoke are based on a resource production system such as
+              agriculture, fishing, hunting, and gathering, as well as logging.
+              The main crops are cassava brava, sweet cassava, banana, and
+              pineapple. In recent years, colonization has contributed to the
+              Andoque adding semi-permanent crops such as bananas, sugar cane,
+              and corn. They are located in an indigenous reservation where
+              there are 3 malokas, and the rest of the houses are close to the
+              malokas. The Andoque people have patrilineal clans, and their
+              names are Sparrowhawk, Deer, Sun, Arriera Ant, and Cucarrón.
+              Nowadays, the malokas are the social, economic, cultural, and
+              ritual structures of the community, and the leader of the rituals
+              is called a maloquero.
+            </p>
+          </div>
+          <div className="lg:w-1/2 mt-8 lg:mt-0">
+            <div className="grid grid-cols-2 gap-4">
+              <img src="cazar.jpg" alt="Cazar" className="w-full h-auto" />
+              <img
+                src="vegetables.jpg"
+                alt="Vegetables"
+                className="w-full h-auto"
+              />
+              <img src="pescao.jpg" alt="Pescao" className="w-full h-auto" />
+              <img src="vege.jpg" alt="Vege" className="w-full h-auto" />
+            </div>
+          </div>
         </div>
-        <div className="w-1/5 overflow-hidden transition-transform duration-500 transform hover:scale-110 animate-slide4 mr-16">
-          <img src="vege.jpg" alt="Imagen 4" className="w-full h-auto" />
-        </div>
-      </div>
-      <div className="w-11/12 mx-auto flex mt-48">
-        <div className="flex-1">
-          <ImageGallery
-            items={images}
-            showPlayButton={false}
-            showFullscreenButton={false}
-            showNav={false}
-            showBullets={true}
-            autoPlay={true}
-            slideInterval={3000}
-            showThumbnails={false}
-            slideDuration={1000}
-            additionalClass="custom-image-gallery" // Clase adicional para el componente ImageGallery
-          />
-        </div>
-        <div className="flex-1">
-          <h1 className="text-4xl pt-16 ml-20  flex items-start justify-start">
-            Languages
-          </h1>
-          <p className="pt-6 ml-20">
-            The Andoque is a indigenous american languages its spoken for a
-            little bit of indigenous in the transcourse from the river caqueta
-            <br />
-            <br />
-            In Colombia and actually they are en a very problem because the
-            poblation is in decline of habitants. in 2000 investigation was 610
-            andoque spokers in the area of river Anduche and aguas abajo de
-            Araracuara and 50 of this people only talk in andoque and the rest
-            of them talk andoque and spanish and like a random fact is what the
-            andoque extended to peru.
-          </p>
-        </div>
-      </div>
-      <br />
-      <br />
-      <br />
-      <div className="flex mt-40 mx-4">
-        <div className="flex items-center justify-center w-1/5 overflow-hidden transition-transform duration-500 transform hover:scale-110 animate-slide1 ml-20">
-          <img src="cazar.jpg" alt="Imagen 1" className="w-full h-auto" />
-        </div>
-        <div className="flex items-center justify-center w-1/5 overflow-hidden transition-transform duration-500 transform hover:scale-110 animate-slide2">
-          <img src="vegetables.jpg" alt="Imagen 2" className="w-full h-auto" />
-        </div>
-        <div className="flex items-center justify-center w-1/5 overflow-hidden transition-transform duration-500 transform hover:scale-110 animate-slide3">
-          <img src="pescao.jpg" alt="Imagen 3" className="w-full h-auto" />
-        </div>
-        <div className="flex items-center justify-center w-1/5 overflow-hidden transition-transform duration-500 transform hover:scale-110 animate-slide4 mr-16">
-          <img src="vege.jpg" alt="Imagen 4" className="w-full h-auto" />
-        </div>
-        <div className="w-full lg:w-2/3 ml-16">
-          <h1 className="text-4xl flex items-start justify-start">
-            Economy and housing:
-          </h1>
-          <p className="pt-6 mr-20">
-            The Andoke are based on a resource production system such as
-            agriculture, fishing, hunting and gathering, as well as logging. The
-            main crops are cassava brava, sweet cassava, banana and pineappleIn
-            recent years, colonization has contributed to the Andoque adding
-            semi-permanent crops such as bananas, sugar cane and corn. <br />
-            They are ubicaded in a indigenous reservation in this there is 3
-            malokas where lives the more important of the tribe and the rest of
-            the houses are close from the malokas. The andoque people has
-            patrilineal clans this people is who lifes in the houses arond the
-            malokas and his names are Sparrowhawk, Deer, Sun, Arriera Ant and
-            Cucarrón. Nowadays the malokas are the social, economic, cultural
-            and ritual structures of the community. And the guy who leader the
-            rituals is called maloquero
-          </p>
-        </div>
-      </div>
-      <br />
-      <br />
-      <br />
-      <div className="mx-auto mt-40 text-center">
-        <h1 className="text-4xl mb-6">His culture</h1>
-      </div>
-      <div className="flex">
-        <div className="w-1/5 border-r border-gray-400 flex justify-center items-start p-4">
-          <p>
-            1. They had a big territorium that spread from the river Monochoa,
-            above the araracuara chanel to river Quinche. in a moment they was
-            10000 people divided in this terrirorium they was sepered for
-            linagues and every linagues lives in a difirent maloka.{" "}
-          </p>
-        </div>
-        <div className="w-1/5 border-r border-gray-400 flex justify-center items-start p-4">
-          <p>
-            2. Evidence speaks of long networks of exchange between groups that
-            lived in different environments in the region. The Andoke had stone
-            axes that were discovered in their territory as part of rituals,
-            placing this activity in an important place in their life. The lack
-            of stones in the area and little availability of these tools gave
-            the group an advantage for exchange.{" "}
-          </p>
-        </div>
-        <div className="w-1/5 border-r border-gray-400 flex justify-center items-start p-4">
-          <p>
-            3. The conquest expedicions and territory colony in the XVll century
-            by the spanish, portuguese, franciscans that produced big changes in
-            the amazon territory, the cyle “La caucheria” early of century XX it
-            was established in the most significant hit in his history,
-            generating profunds transforms and adaptations in his cultural life.
-            As result of this activity not only disappeared the most part of the
-            population, but also introduced massively intruments of metal
-            instruments and merchandise, they adapted at news economic systems
-            and they promoted diferent authority models{" "}
-          </p>
-        </div>
-        <div className="w-1/5 border-r border-gray-400 flex justify-center items-start p-4">
-          <p>
-            1. For the majority of the peoples that inhabit the Amazon region,
-            the use of plants is based on a fundamental element within their
-            cultural and social life. The Yuruparí is the most important ritual
-            because it remembers the origins and revives the essential elements
-            of your vision towards the world.{" "}
-          </p>
-        </div>
-        <div className="w-1/5 border-r border-gray-400 flex justify-center items-start p-4">
-          <p>
-            3. ethnohistorical evidences, talk about of extensive nettings
-            exchanges betwen the groups of the region that they inhabited
-            different environments. The andoques made stone axes, excavated in
-            their territory in the framework of complex rituals that placed this
-            activity in a important place. The scarcity of stone in the area as
-            also the access to these tools gave to group a priviliged position
-            for exchanges
-          </p>
+
+        <div className="mt-36">
+          <h1 className="text-4xl text-center">His culture</h1>
+          <div className="flex flex-wrap justify-center mt-8">
+            <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
+              <p>
+                1. They had a big territory that spread from the river Monochoa,
+                above the Araracuara channel to river Quinche. At one point,
+                they were 10,000 people divided in this territory, separated by
+                lineages, and each lineage lived in a different maloka.
+              </p>
+            </div>
+            <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
+              <p>
+                2. Evidence speaks of long networks of exchange between groups
+                that lived in different environments in the region. The Andoke
+                had stone axes that were discovered in their territory as part
+                of rituals, placing this activity in an important place in their
+                life. The lack of stones in the area and little availability of
+                these tools gave the group an advantage for exchange.
+              </p>
+            </div>
+            <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
+              <p>
+                3. The conquest expeditions and territory colonization in the
+                XVII century by the Spanish, Portuguese, and Franciscans
+                produced big changes in the Amazon territory. The cycle “La
+                caucheria” established in the early 20th century was the most
+                significant hit in his history, generating profound
+                transformations and adaptations in his cultural life. As a
+                result of this activity, not only did most of the population
+                disappear, but also instruments of metal were introduced
+                massively, they adapted to new economic systems, and they
+                promoted different authority models.
+              </p>
+            </div>
+            <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
+              <p>
+                4. For the majority of the peoples that inhabit the Amazon
+                region, the use of plants is based on a fundamental element
+                within their cultural and social life. The Yuruparí is the most
+                important ritual because it remembers the origins and revives
+                the essential elements of your vision towards the world.
+              </p>
+            </div>
+            <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
+              <p>
+                5. Ethnohistorical evidences talk about extensive nettings
+                exchanges between the groups of the region that inhabited
+                different environments. The Andoques made stone axes, excavated
+                in their territory in the framework of complex rituals that
+                placed this activity in an important place. The scarcity of
+                stone in the area as well as the access to these tools gave to
+                group a privileged position for exchanges.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </>
