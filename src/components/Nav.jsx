@@ -8,8 +8,13 @@ function Navbar() {
         <div>
           <ul className="flex space-x-4">
             <li>
-              <Link to="/app" className="text-black hover:text-gray-300">
-                Next &gt;
+              <Link to="/" className="text-black hover:text-gray-300">
+                Andoques &gt;
+              </Link>
+            </li>
+            <li>
+              <Link to="/yaguas" className="text-black hover:text-gray-300">
+                Yaguas &gt;
               </Link>
             </li>
           </ul>

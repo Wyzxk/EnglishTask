@@ -5,16 +5,22 @@ import Navbar from "./components/Nav";
 function App() {
   const images = [
     {
-      original: "https://picsum.photos/id/866/1000/600/",
+      original: "Andoque1.jpg",
       thumbnail: "https://picsum.photos/id/866/250/150/",
     },
     {
-      original: "https://picsum.photos/id/1020/1000/600/",
+      original: "andoque2.jpg",
       thumbnail: "https://picsum.photos/id/1020/250/150/",
     },
     {
-      original: "https://picsum.photos/id/1018/1000/600/",
+      original: "andoque3.jpg",
       thumbnail: "https://picsum.photos/id/1018/250/150/",
+    },
+  ];
+  const imagesTwo = [
+    {
+      original: "andoque5.jpg",
+      thumbnail: "https://picsum.photos/id/866/250/150/",
     },
   ];
 
@@ -29,9 +35,7 @@ function App() {
               The Andoque culture is located in the Araracuara region and caño
               aduche. They have been living here for many years and are very
               close to the Ribera of the middle river caquetá, just in the south
-              of the Colombian Amazon. They are one of the cultures with the
-              smallest number of inhabitants but with a lot of capacity to
-              conserve their ancestral traditions.
+              of the Colombian Amazon.
             </p>
           </div>
           <div className="lg:w-1/2 mt-8 lg:mt-0">
@@ -80,8 +84,7 @@ function App() {
               Their diet consists of eating fish, hunting animals like deer and
               birds, and collecting fruits and vegetables from the Amazon. They
               also prepared dishes with the crops and raw materials of their
-              agriculture. In addition, they also exchange their meals with
-              other communities.
+              agriculture.
             </p>
           </div>
           <div className="lg:w-1/2 mt-8 lg:mt-0">
@@ -100,7 +103,7 @@ function App() {
         <div className="mt-20 lg:flex">
           <div className="lg:w-1/2 lg:pr-8">
             <ImageGallery
-              items={images}
+              items={imagesTwo}
               showPlayButton={false}
               showFullscreenButton={false}
               showNav={false}
@@ -120,8 +123,7 @@ function App() {
               currently facing challenges due to a decline in population. In
               2000, there were 610 Andoque speakers in the area of the river
               Anduche and downstream of Araracuara, and only 50 of them spoke
-              Andoque exclusively, while the rest spoke Andoque and Spanish. It
-              is interesting to note that Andoque extended into Peru.
+              Andoque exclusively, while the rest spoke Andoque and Spanish.
             </p>
           </div>
         </div>
@@ -129,18 +131,11 @@ function App() {
           <div className="lg:w-1/2 lg:pr-8 pt-9">
             <h1 className="text-4xl">Economy and Housing:</h1>
             <p className="pt-6 pr-20">
-              The Andoke are based on a resource production system such as
-              agriculture, fishing, hunting, and gathering, as well as logging.
-              The main crops are cassava brava, sweet cassava, banana, and
-              pineapple. In recent years, colonization has contributed to the
-              Andoque adding semi-permanent crops such as bananas, sugar cane,
-              and corn. They are located in an indigenous reservation where
-              there are 3 malokas, and the rest of the houses are close to the
-              malokas. The Andoque people have patrilineal clans, and their
-              names are Sparrowhawk, Deer, Sun, Arriera Ant, and Cucarrón.
-              Nowadays, the malokas are the social, economic, cultural, and
-              ritual structures of the community, and the leader of the rituals
-              is called a maloquero.
+              Andoque is an indigenous American language spoken by a small group
+              in the Caquetá River area. In colombia. In the year 2000, there
+              were 610 Andoque speakers in the Anduche River area and downstream
+              of Araracuara, and only 50 of them spoke Andoque exclusively,
+              while the rest spoke Andoque and Spanish.
             </p>
           </div>
           <div className="lg:w-1/2 mt-8 lg:mt-0">
@@ -151,8 +146,8 @@ function App() {
                 alt="Vegetables"
                 className="w-full h-auto"
               />
-              <img src="pescao.jpg" alt="Pescao" className="w-full h-auto" />
-              <img src="vege.jpg" alt="Vege" className="w-full h-auto" />
+              <img src="andoque6.png" alt="Pescao" className="w-full h-auto" />
+              <img src="andoque7.jpg" alt="Vege" className="w-full h-auto" />
             </div>
           </div>
         </div>
@@ -170,46 +165,36 @@ function App() {
             </div>
             <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
               <p>
-                2. Evidence speaks of long networks of exchange between groups
-                that lived in different environments in the region. The Andoke
-                had stone axes that were discovered in their territory as part
-                of rituals, placing this activity in an important place in their
-                life. The lack of stones in the area and little availability of
-                these tools gave the group an advantage for exchange.
+                Evidence speaks of long networks of exchange between groups that
+                lived in different environments in the region. The Andoque had
+                stone axes that were discovered in their territory as part of
+                rituals, placing this activity in an important place in their
+                life.
               </p>
             </div>
             <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
               <p>
-                3. The conquest expeditions and territory colonization in the
-                XVII century by the Spanish, Portuguese, and Franciscans
-                produced big changes in the Amazon territory. The cycle “La
-                caucheria” established in the early 20th century was the most
-                significant hit in his history, generating profound
-                transformations and adaptations in his cultural life. As a
-                result of this activity, not only did most of the population
-                disappear, but also instruments of metal were introduced
-                massively, they adapted to new economic systems, and they
-                promoted different authority models.
+                The conquest expeditions and territory colonization in the XVII
+                century by the Spanish, Portuguese, and Franciscans produced big
+                changes in the Amazon territory. As a result of this activity,
+                not only did most of the population disappear, but also
+                instruments of metal were introduced massively.
               </p>
             </div>
             <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
               <p>
-                4. For the majority of the peoples that inhabit the Amazon
-                region, the use of plants is based on a fundamental element
-                within their cultural and social life. The Yuruparí is the most
-                important ritual because it remembers the origins and revives
-                the essential elements of your vision towards the world.
+                For the majority of the peoples that inhabit the Amazon region,
+                the use of plants is based on a fundamental element within their
+                cultural and social life
               </p>
             </div>
             <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/5 p-4">
               <p>
-                5. Ethnohistorical evidences talk about extensive nettings
+                Ethnohistorical evidences talk about extensive nettings
                 exchanges between the groups of the region that inhabited
                 different environments. The Andoques made stone axes, excavated
                 in their territory in the framework of complex rituals that
-                placed this activity in an important place. The scarcity of
-                stone in the area as well as the access to these tools gave to
-                group a privileged position for exchanges.
+                placed this activity in an important place.
               </p>
             </div>
           </div>
