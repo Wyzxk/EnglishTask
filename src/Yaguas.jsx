@@ -50,9 +50,9 @@ function Yaguas() {
               showPlayButton={false}
               showFullscreenButton={false}
               showNav={false}
-              showBullets={true}
+              showBullets={false}
               autoPlay={true}
-              slideInterval={3000}
+              slideInterval={5000}
               showThumbnails={false}
               slideDuration={1000}
               additionalClass="custom-image-gallery"
@@ -86,9 +86,9 @@ function Yaguas() {
               showPlayButton={false}
               showFullscreenButton={false}
               showNav={false}
-              showBullets={true}
+              showBullets={false}
               autoPlay={true}
-              slideInterval={3000}
+              slideInterval={5000}
               showThumbnails={false}
               slideDuration={1000}
               additionalClass="custom-image-gallery"
@@ -142,7 +142,7 @@ function Yaguas() {
               showNav={false}
               showBullets={true}
               autoPlay={true}
-              slideInterval={3000}
+              slideInterval={5000}
               showThumbnails={false}
               slideDuration={1000}
               additionalClass="custom-image-gallery"
